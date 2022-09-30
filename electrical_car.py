@@ -1,3 +1,4 @@
+from car_imp import Car
 class Battery:
     def __init__(self, battery=100):
         self.battery = battery
@@ -13,7 +14,5 @@ class Electric(Car):
     def description_name(self):
         desc = str(self.year) + ' ' + self.model
         return desc.title()
-
 tesla = Electric('tesla', 'S', 2017)
 tesla.battery.descr_battery()
-
